@@ -8,13 +8,18 @@
   font-size: 62.5%;
 
   --tt-heading: #0c3440;
+
   --tt-label: #00453a;
   --tt-input: #212529;
   --ot-input: #02799d;
   --bd-input: rgba(73, 80, 87, 0.3);
   --tt-placeholder: rgba(73, 80, 87, 0.5);
+  --bg-input: #dce2e9;
+
   --tt-button-color: white;
   --bg-button: #02799d;
+  --bg-button-hover: #025b77;
+
   --bg-error: #f03e3e;
   --tt-error: white;
 }
@@ -25,6 +30,13 @@ body {
   font-size: 1.6rem;
 }
 
+body,
+input,
+button {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
 .container {
   height: 100vh;
   display: grid;
@@ -32,11 +44,77 @@ body {
 }
 
 .card {
-  padding: 4.8rem 6.4rem 6.4rem;
+  padding: 4rem 5rem 6rem;
   background-color: white;
   max-width: 42.8rem;
   margin-inline: auto;
 
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 00.1);
   border-radius: 0.6rem;
+}
+
+.title {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: var(--tt-heading);
+}
+
+form {
+  width: 30rem;
+}
+
+form h1 {
+  margin-bottom: 3.2rem;
+}
+
+form label {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--tt-label);
+  margin-bottom: 0.8rem;
+}
+
+form input {
+  width: 100%;
+  border: 1px solid var(--bd-input);
+  background: var(--bg-input);
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+}
+
+form input:focus {
+  outline: 2px solid var(--ot-input);
+}
+
+form input::placeholder {
+  color: var(--tt-placeholder);
+}
+
+.input-wrapper + .input-wrapper {
+  margin-top: 1.6rem;
+}
+
+button {
+  margin-top: 3.2rem;
+  padding: 1.6rem;
+  width: 100%;
+
+  border: none;
+  border-radius: 0.4rem;
+  background-color: var(--bg-button);
+  color: var(--tt-button-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: var(--bg-button-hover);
 }
