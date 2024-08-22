@@ -14,18 +14,18 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <div class="alert-error open">Digite somente números!</div>
+    <div class="alert-error">Digite somente números!</div>
 
     <div class="container">
       <main class="card">
-        <form action="">
+        <form>
           <h1 class="title">Cálculo de IMC</h1>
           <div class="input-wrapper">
             <label for="weight">Peso (kg)</label>
             <input id="weight" type="text" placeholder="60" />
           </div>
           <div class="input-wrapper">
-            <label for="height">Altura (m)</label>
+            <label for="height">Altura (cm)</label>
             <input id="height" type="text" placeholder="165" />
           </div>
           <button id="btn-calc-imc" type="submit">
@@ -43,7 +43,7 @@
         <button class="close">
           <img src="./assets/close.svg" alt="Fechar modal" />
         </button>
-        <h2 class="title">Seu IMC é de 28</h2>
+        <h2 class="title"><span>Seu IMC é de 28</span></h2>
       </div>
     </div>
   </body>
