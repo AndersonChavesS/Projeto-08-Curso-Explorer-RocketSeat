@@ -34,3 +34,6 @@ function clearInputs() {
   inputHeight.value = '';
   inputWeight.value = '';
 }
+
+inputWeight.oninput = () => AlertError.close()
+inputHeight.oninput = () => AlertError.close()
