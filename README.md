@@ -45,5 +45,5 @@ Função que é chamada quando o formulário é submetido. Ela previne o comport
 
 ## Autor
 
-- [Seu Nome]
+- [Anderson Chaves]
 
