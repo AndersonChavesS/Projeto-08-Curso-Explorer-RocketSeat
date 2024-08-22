@@ -13,6 +13,8 @@ form.onsubmit = (e) => {
 
   Modal.message.innerText = message;
   Modal.open();
+  inputHeight.value = '';
+  inputWeight.value = '';
 };
 
 function IMC(weight, height) {
